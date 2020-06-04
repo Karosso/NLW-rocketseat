@@ -13,7 +13,7 @@
 }
 
 #page-create-point header a {
-    color: var(--title-collor);
+    color: var(--title-color);
     font-weight: bold;
 
     display: flex;
@@ -158,7 +158,7 @@ margin-top: 12px;
     display: flex;/*alinhamento ao meio*/
     align-items: center;
 
-    color: var(--title-collor);
+    color: var(--title-color);
 }
 
 .items-grid li.selected {

@@ -1,9 +1,5 @@
-
-
-
 function populateUFs(){
     const ufSelect = document.querySelector("select[name=uf]")
-    
 
     fetch("https://servicodados.ibge.gov.br/api/v1/localidades/estados")
     .catch( neg => alert("Não foi possivel acessar os estados do servidor IBGE!!") ) //.catch((res) => { return alert("Deu ruim!!!")})
@@ -13,10 +9,7 @@ function populateUFs(){
         for( const state of states){
             ufSelect.innerHTML += `<option value="${state.id}">${state.nome}</option>`
         }
-
-        
     })
-
 }
 
 populateUFs()
@@ -102,5 +95,4 @@ document
 
         console.log(selectedItems)
         collectedItems.value = selectedItems
-
     }

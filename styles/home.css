@@ -26,7 +26,7 @@
 #page-home header a{
     
     display: flex;
-    color: var(--title-collor); 
+    color: var(--title-color); 
     font-weight: 700;
 
     

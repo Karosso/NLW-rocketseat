@@ -1,5 +1,5 @@
 :root{
-    --title-collor: #322153;
+    --title-color: #322153;
     --primary-color: #34cb79;
 } 
 
@@ -25,7 +25,7 @@ a{
 
 h1, h2, h3, h4, h5, h6 {
     font-family: Ubuntu, sans-serif;
-    color: var(--title-collor); 
+    color: var(--title-color); 
 }
 /* Box Model
     Modelo de caixa, todas caixas tem:
