@@ -1,0 +1,32 @@
+{% extends "layout.html" %} 
+
+{% set pageId = "page-home" %} <!-- se faltar será criado com uma variavel "" vazia -->
+
+{% block styles %}
+    <link rel="stylesheet" href="/styles/home.css">
+    <link rel="stylesheet" href="/styles/modal.css">
+{% endblock styles %}
+
+{% block content %}
+    <div class="content">
+        <header>
+            <img src="/assets/logo.svg" alt="Logomarca">
+            <a href='/create-point'><span></span>Cadastre um ponto de coleta</a> <!--ELEMENTO IN LINE (não têm quebra de linha)-->
+        </header>
+        
+        <main>
+            <!--<h1>{{ title }}</h1> exemplo de conteudo dinamico com nunjucks - server.js ln 25 -->
+            <h1>Seu Marketplace de coleta de Resíduos</h1>
+            <p>Ajudamos pessoas a encontrarem pontos de coleta de fomar eficiente.</p>
+            <a href="#"><span></span><strong>Pesquisar pontos de coleta</strong></a>
+        </main>
+    </div>
+{% endblock content %}
+
+{% block modal %}
+    {% include "partials/modal.html" %}
+{% endblock modal %}
+
+{% block scripts %}
+    <script src="/scripts/index.js"></script>
+{% endblock scripts %}

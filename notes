@@ -1,0 +1,19 @@
+Iniciar projeto nodejs
+    npm init -y (cria o json)
+
+adicionar os nodes modules dependencias*
+    npm install express
+
+*não enviar a pasta node_modules pro git - apos baixar 
+um projeto o npm install irá incluir o node_modules 
+automaticamente
+
+continuar usando emmet, com a extensão do nunjucks:
+    ctrl + shift + p : buscar settings json "Open Settings(json)
+    Incluir no fim do arquivo:
+        "files.associations": {
+        "*html": "njk"
+        }
+        "emmet.includeLanguages": {
+        "njk": "html"
+        }

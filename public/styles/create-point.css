@@ -55,10 +55,21 @@ form fieldset {
 
 form legend {
     margin-bottom: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%; /*percorre todo o espaço da linha*/
 }
 
 form legend h2 {
     font-size: 24px;
+}
+
+form legend span {
+    font-size: 14px;
+    color: var(--title-color);
 }
 
 form .field { /*todos itens field*/
@@ -66,7 +77,7 @@ form .field { /*todos itens field*/
     display: flex;
     flex-direction: column;
 
-    margin-bottom: 24px;
+        margin-bottom: 24px;
 }
 
 form .field-group {
