@@ -66,6 +66,7 @@ document
 
         const itemId = itemLi.dataset.id // variavel recebe a Id do item clicado
 
+        //console.log('ITEM ID: ', itemId)
         //verificar itens selecionados e retornar os selecionados
         const alreadySelected = selectedItems.findIndex( function( item) {//simplificando const alreadySelected = selectedItems.findIndex( item => item == itemId)
             //criada a variavel alreadySelectd q vai receber os itens que receberam cliques e estão ativas
@@ -93,6 +94,6 @@ document
             selectedItems.push(itemId)
         }
 
-        console.log(selectedItems)
+        //console.log('selectedItems: ', selectedItems)
         collectedItems.value = selectedItems
     }
