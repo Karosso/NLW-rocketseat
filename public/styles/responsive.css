@@ -20,11 +20,11 @@
     }
 
     #page-search-results .cards {
-        grid-template-columns: 1fr;
+        grid-template-columns: 100%;
     }
 
     #page-search-results .cards img {
-        height: 250px;
+        height: auto;
     }
 
     #page-create-point .field-group {
